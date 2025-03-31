@@ -1,0 +1,14 @@
+{
+    "name": "jannyabuabu/messaging-api",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Janny Abu-abu"
+        }
+    ],
+    "require": {
+        "twilio/sdk": "^8.4",
+        "phpmailer/phpmailer": "^6.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
