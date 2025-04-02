@@ -37,9 +37,6 @@ composer install
 
 ### 3. Configure the `.env` File
 1. Create a `.env` file in the root directory:
-   ```bash
-   cp .env.example .env
-   ```
 2. Open the `.env` file and configure the following values:
    ```properties
    DB_HOST=localhost
@@ -73,19 +70,11 @@ composer install
     phone VARCHAR(20) NOT NULL,
     message TEXT NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-   ```
-3. Import the database schema:
-   ```bash
-   mysql -u root -p messaging_db < database/schema.sql
+   );
    ```
 
 ### 5. Start the Development Server
-Run the following command to start the PHP built-in server:
-```bash
-php -S localhost:8000 -t public
-```
-Or Start XAMPP/LAMPP Server
+Start XAMPP/LAMPP Server
 >Go to Your XAMPP Panel!
 
 Visit the application at [http://localhost:8000](http://localhost:8000).
@@ -148,10 +137,9 @@ Feel free to fork this repository and submit pull requests. Contributions are we
 ---
 
 ## 📜 License
-This project is licensed under the MIT License.
+This project has no license yet.
 
 ---
 
 ## 💬 Questions?
 If you have any questions, feel free to reach out to **Janny Abu-abu**. 😊
-```
