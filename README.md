@@ -73,12 +73,13 @@ Run the following command to install the required PHP packages:
 ```bash
 composer install
 ```
+   > ⚠️ **Important:** Might get an error response about zip extension and git. Try reaching out to the author for guidance!
 
 ### 5. Start the Development Server
 Start XAMPP/LAMPP Server
 >Go to Your XAMPP Panel!
 
-Visit the application at [http://localhost:8000](http://localhost:8000).
+Visit the application at [http://localhost:(appfoldername)](http://localhost/(appfoldername)).
 
 ---
 
@@ -91,7 +92,7 @@ Visit the application at [http://localhost:8000](http://localhost:8000).
    TWILIO_AUTH_TOKEN=your_twilio_auth_token
    TWILIO_PHONE=your_twilio_phone_number
    ```
-
+   > ⚠️ **Important:** Globe Telecom Sim Number might not work when you Sign-Up! Try using Smart/TNT Telecom Sim Number.
 ---
 
 ## 📧 Email Configuration
