@@ -26,7 +26,7 @@ Before you begin, make sure you have the following installed:
 ### 1. Clone the Repository
 ```bash
 
-git clone https://github.com/your-username/MessagingAPI.git
+git clone https://github.com/jan2022305846/MessagingAPI.git
 cd MessagingAPI
 ```
 ### 2. Install Dependencies
@@ -50,7 +50,7 @@ composer install
 
    SMTP_HOST=smtp.gmail.com
    SMTP_USER=your_email@gmail.com
-   SMTP_PASS=your_email_app_password
+   SMTP_PASS="your_email_app_password"
    SMTP_PORT=587
    ```
 
@@ -114,10 +114,6 @@ MessagingAPI/
 ```
 
 ---
-
-## ⚠️ Important Notes
-- **Do not commit your .env file** to the repository. Use .gitignore to exclude it.
-- Rotate your Twilio and email credentials if they are accidentally exposed.
 
 ---
 
