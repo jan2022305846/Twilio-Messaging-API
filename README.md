@@ -29,11 +29,23 @@ Before you begin, make sure you have the following installed:
 git clone https://github.com/jan2022305846/MessagingAPI.git
 cd MessagingAPI
 ```
-### 2. Install Dependencies
-Run the following command to install the required PHP packages:
-```bash
-composer install
-```
+### 2. Set Up the Database
+1. Open your MySQL client or phpMyAdmin.
+2. Create a new database:
+   ```sql
+   CREATE DATABASE messaging_db;
+   USE messaging_db;
+
+   CREATE TABLE messages (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    phone VARCHAR(20) NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+   );
+   ```
+
 
 ### 3. Configure the `.env` File
 1. Create a `.env` file in the root directory:
@@ -56,22 +68,11 @@ composer install
 
    > ⚠️ **Important:** Replace the placeholders with your actual credentials. Never share your .env file publicly!
 
-### 4. Set Up the Database
-1. Open your MySQL client or phpMyAdmin.
-2. Create a new database:
-   ```sql
-   CREATE DATABASE messaging_db;
-   USE messaging_db;
-
-   CREATE TABLE messages (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    email VARCHAR(255) NOT NULL,
-    phone VARCHAR(20) NOT NULL,
-    message TEXT NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-   );
-   ```
+### 4. Install Dependencies
+Run the following command to install the required PHP packages:
+```bash
+composer install
+```
 
 ### 5. Start the Development Server
 Start XAMPP/LAMPP Server
