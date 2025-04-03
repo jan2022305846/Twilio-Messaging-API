@@ -70,16 +70,16 @@ cd MessagingAPI
 
 ### 4. Install Dependencies
 Run the following command to install the required PHP packages:
-```bash
-composer install
-```
+   ```bash
+   composer install
+   ```
    > ⚠️ **Important:** Might get an error response about zip extension and git. Try reaching out to the author for guidance!
 
 ### 5. Start the Development Server
 Start XAMPP/LAMPP Server
 >Go to Your XAMPP Panel!
 
-Visit the application at [http://localhost:(appfoldername)](http://localhost/(appfoldername)).
+Visit the application at [http://localhost/(appfoldername)](http://localhost/(appfoldername)).
 
 ---
 
